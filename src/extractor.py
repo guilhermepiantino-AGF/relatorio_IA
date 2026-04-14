@@ -37,6 +37,16 @@ def extrair_dados_acao(conn, sigla: str) -> dict:
 
     return dados
 
+# conn = pymysql.connect(
+#     host="prd.db.agfmais.com.br", 
+#     port=3306,
+#     user="api-wealth-prd",
+#     password="207u{M5Ym)38;Kt",
+#     db="agfmais",
+#     connect_timeout=10)
+
+# df = extrair_dados_acao(conn, "TASA4")
+                   
 #df_empresa   = dados["empresa"]
 #df_resultado = dados["historico_resultado"]
 #df_noticias  = dados["noticias"]
