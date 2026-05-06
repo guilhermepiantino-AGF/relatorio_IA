@@ -1,0 +1,4 @@
+
+ python -m uvicorn src.api:app --reload      
+ 
+ curl.exe -X POST "http://localhost:8000/analisar/BBSE3" 

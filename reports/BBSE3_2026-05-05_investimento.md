@@ -1,0 +1,180 @@
+# Relatório de Análise — BBSE3 | BB Seguridade Participações S.A.
+
+---
+
+## 1. Sumário
+
+A BB Seguridade (BBSE3) é o braço de seguros, previdência, capitalização e odontologia do Banco do Brasil. Opera como holding sem risco de crédito próprio, distribuindo os resultados gerados por suas controladas (Brasilseg, Brasilprev, Brasilcap, Brasildental) e pela BB Corretora, canal exclusivo de distribuição via rede do Banco do Brasil. A tese de investimento é essencialmente voltada à renda: a empresa tem histórico consistente de lucros crescentes, payout médio elevado (próximo de 92%), dividend yield projetivo acima de 11% e posição sólida em um setor perene. O principal risco de curto prazo é a combinação de queda esperada da Selic com pressões operacionais em seguros rurais e prestamistas, que pode comprimir os resultados de 2026. O preço atual (R$ 33,85) oferece margem de segurança relevante em relação ao preço teto projetivo (R$ 66,89).
+
+### Checklist — Metodologia Barsi/AGF
+
+| Critério | Situação | Comentário |
+|---|---|---|
+| **Setor** | ✅ Atendido | Classificada como **Seguros (BESST)** — setor perene com demanda estrutural crescente |
+| **Lucratividade e geração de caixa estáveis** | ✅ Atendido | Lucro operacional cresceu continuamente de R$ 2,9 bi (2013) a R$ 9,8 bi (2024), com ROE consistentemente acima de 28% |
+| **Pagadora de dividendos** | ✅ Atendido | Payout médio de 91,56%; DY projetivo de 11,86%; pagou R$ 31/ação acumulado desde o IPO em 2013 |
+| **Preço atrativo** | ✅ Atendido | Cotação atual (R$ 33,85) representa ~49% do preço teto projetivo (R$ 66,89), com margem de segurança de ~97% |
+
+> **Carteira recomendada AGF:** BBSE3 **está na carteira recomendada AGF**, com operação de **COMPRA**, peso de **15,0%** e última atualização em **06/04/2026**.
+
+---
+
+## 2. Análise de Dados Financeiros
+
+### 2.1 Dividendos — Indicadores Históricos e Correntes
+
+| Ano | DPA (R$) | DY (%) | Payout (%) | Cotação Fechamento (R$) |
+|---|---|---|---|---|
+| 2013 | — | 0,0 | 0,0 | 23,95 |
+| 2014 | 1,19 | 3,71 | 69,1 | 30,47 |
+| 2015 | 1,67 | 6,88 | 79,6 | 22,83 |
+| 2016 | 1,67 | 5,89 | 82,9 | 27,82 |
+| 2017 | 1,64 | 5,75 | 80,8 | 28,70 |
+| 2018 | 3,09 | 11,22 | 174,6 | 28,32 |
+| 2019 | 1,58 | 4,19 | 47,4 | 38,10 |
+| 2020 | 2,78 | 9,39 | 144,3 | 29,39 |
+| 2021 | 1,00 | 4,80 | 50,6 | 20,60 |
+| 2022 | 1,96 | 5,82 | 64,8 | 33,39 |
+| 2023 | 3,48 | 10,33 | 87,3 | 33,89 |
+| 2024 | 2,65 | 7,33 | 59,6 | 36,42 |
+| 2025 | 4,25 | 11,77 | 91,6 | — |
+| **2026 (proj.)** | **4,01** | **11,86 (proj.)** | **91,56 (méd.)** | **33,85** |
+
+> **DY mínimo 5 anos:** 5,03% | **DY médio 5 anos:** 5,84% | **DY 12 meses (corrente):** 13,4%
+
+O histórico de dividendos da BBSE3 mostra distribuição consistente desde 2014, com aceleração relevante após 2022. O payout médio de 91,56% confirma a vocação distribuidora da companhia. Os anos de payout acima de 100% (2018 e 2020) refletem pagamentos extraordinários. O DY dos últimos 12 meses de 13,4% é o maior da série histórica disponível, sustentado pela combinação de lucro recorde e cotação pressionada. O DPA projetivo de R$ 4,01 para 2026, com DY projetivo de 11,86%, segue atrativo mesmo com expectativa de moderação nos resultados operacionais.
+
+---
+
+### 2.2 Lucratividade — Tendência de Resultado Operacional
+
+| Ano | Resultado Operacional (EBIT, R$ bi) | Impostos Diversos (R$ bi) | Lucro Líquido (R$ bi) | LPA (R$) | ROE (%) | ROA (%) |
+|---|---|---|---|---|---|---|
+| 2013 | 2,95 | 0,47 | 2,47 | — | — | — |
+| 2014 | 4,14 | 0,68 | 3,46 | — | — | — |
+| 2015 | 4,99 | 0,79 | 4,21 | — | — | — |
+| 2016 | 4,82 | 0,81 | 4,01 | — | — | — |
+| 2017 | 4,69 | 0,92 | 4,05 | — | — | — |
+| 2018 | 4,41 | 1,11 | 3,54 | — | — | — |
+| 2019 | 8,60 | 2,26 | 6,66 | — | — | — |
+| 2020 | 4,78 | 1,04 | 3,85 | — | 35,33 | — |
+| 2021 | 4,93 | 1,15 | 3,93 | — | 29,54 | — |
+| 2022 | 7,05 | 1,50 | 6,04 | — | 37,47 | — |
+| 2023 | 8,91 | 1,55 | 7,95 | 3,48 | 80,96 | 43,49 |
+| 2024 | 9,76 | 1,71 | 8,70 | 2,65 | 89,77 | 40,26 |
+| 2025 | 9,87 | 1,92 | 9,02 | 4,25 | 86,84 | 39,04 |
+| 2026 (parcial) | 2,39 | 0,47 | — | — | — | — |
+
+**LPA trimestral recente (2024–2025):**
+
+| Trimestre | LPA Realizado (R$) | LPA Estimado (R$) |
+|---|---|---|
+| 1T24 | 1,023 | 0,98 |
+| 2T24 | 1,089 | 1,00 |
+| 3T24 | 1,160 | 1,06 |
+| 4T24 | 1,177 | 1,11 |
+| 1T25 | 1,012 | 1,08 |
+| 2T25 | 1,245 | 1,12 |
+| 3T25 | 1,203 | 1,20 |
+| 4T25 | 1,186 | 1,14 |
+
+A trajetória de lucratividade da BB Seguridade é notavelmente consistente e ascendente. O resultado operacional saiu de R$ 2,9 bi em 2013 para R$ 9,9 bi em 2025, uma expansão substancial ao longo de 12 anos. Destaca-se que, em todos os trimestres de 2024, o LPA realizado superou as estimativas de consenso — padrão de alta previsibilidade. Em 2025, a empresa sustentou lucro líquido de R$ 9,0 bi com ROE de 86,84% e ROA de 39,04%, métricas excepcionais para o setor financeiro, reflexo do modelo de negócio asset-light da holding. O único ponto de atenção é o 1T25, único trimestre recente em que o resultado ficou abaixo da estimativa do consenso.
+
+---
+
+### 2.3 Risco de Entrada — Preço, Valuation e Margem de Segurança
+
+| Indicador | Valor |
+|---|---|
+| Cotação atual (R$) | 33,85 |
+| Preço teto AGF (histórico) | 44,80 |
+| Preço teto projetivo AGF | 66,89 |
+| Preço alvo AGF | 37,89 |
+| Preço alvo corrente AGF | 37,56 |
+| DPA projetivo (R$) | 4,01 |
+| DY projetivo (%) | 11,86 |
+| Margem de segurança (histórica, %) | 32,3 |
+| Margem de segurança projetiva (%) | 97,6 |
+| P/L (12 meses) | 7,15x |
+| P/VPA (corrente) | 5,20x |
+| P/L histórico 2024 | 8,13x |
+| P/L histórico 2023 | 8,45x |
+| VPA (R$) | 6,51 |
+| Preço mín. 52 semanas (R$) | 29,43 |
+| Preço máx. 52 semanas (R$) | 36,41 |
+| Lucro proj. total (R$ bi) | 8,56 |
+| LPA projetivo (R$) | 4,64 |
+| Payout médio (%) | 91,56 |
+| ROE 12 meses (%) | 72,72 |
+
+O preço atual de R$ 33,85 posiciona a ação próxima ao piso da janela dos últimos 52 semanas (mín. R$ 29,43) e bem abaixo do teto projetivo de R$ 66,89. O múltiplo P/L de 7,15x é o mais baixo da série histórica disponível (vs. 8,13x em 2024 e 8,45x em 2023), sinalizando que o mercado já desconta parte dos desafios de 2026. O preço teto projetivo, que incorpora o DPA esperado com base no modelo AGF, indica uma margem de segurança projetiva de 97,6% — ou seja, a cotação atual é praticamente a metade do preço teto calculado. Mesmo utilizando o preço alvo corrente de R$ 37,56, há espaço de valorização relevante frente ao nível atual. O principal risco de entrada é a dependência do resultado financeiro (Selic elevada), que pode se reduzir com eventual queda de juros — fator que o mercado parece já estar precificando parcialmente.
+
+---
+
+## 3. Apresentação da Empresa
+
+### Descrição da empresa
+
+- A BB Seguridade Participações S.A. é uma holding de capital aberto criada em dezembro de 2012 e listada na bolsa em abril de 2013, via IPO que movimentou R$ 11,5 bilhões — maior oferta inicial de ações do mundo naquele ano.
+- Opera como braço de seguridade do Banco do Brasil, concentrando participações nos negócios de seguros (Brasilseg), previdência privada aberta (Brasilprev), capitalização (Brasilcap) e odontologia (Brasildental).
+- Ganha dinheiro por meio do resultado das participações nas controladas e do resultado financeiro da holding e das investidas, além das receitas de distribuição via BB Corretora.
+- Modelo de negócio asset-light: não carrega carteira de crédito nem risco atuarial direto — transfere o risco para as operadoras e atua como canal exclusivo via rede de agências do Banco do Brasil.
+- Desde o IPO até 2025, pagou R$ 31 por ação em dividendos acumulados, com valorização da ação de ~100% no período.
+- Em março de 2026, o conselho cancelou 58,6 milhões de ações em tesouraria (2,93% do total), reduzindo o total para 1,94 bilhão de ações e aumentando o DPA futuro.
+
+### Comparação com concorrentes
+
+- **Caixa Seguridade:** modelo similar (braço segurador de banco público), com lucro de R$ 4,31 bi em 2025 e DY de 7,6% — menos da metade do lucro da BB Seguridade e DY inferior.
+- **Porto Seguro:** operadora diversificada com receita líquida de R$ 41,1 bi em 2025 e lucro de R$ 3,38 bi — maior escala de receita, mas lucratividade líquida muito inferior e DY de 6,2%.
+- **Diferencial da BBSE3:** acesso exclusivo à maior rede bancária do Brasil (Banco do Brasil), sem necessidade de construir canal próprio; modelo de baixo capital; DY consistentemente superior ao de seus pares.
+- **Desvantagem:** dependência estrutural do controlador (Banco do Brasil) e da estratégia de crédito rural do BB, que hoje pressiona os resultados via queda de seguros prestamistas e agrícolas.
+
+### Capacidade de gerar valor
+
+- Distribuição exclusiva via rede do Banco do Brasil é uma vantagem competitiva durável e de difícil replicação — barreira de entrada elevada.
+- Modelo de holding com baixas despesas administrativas (R$ 7–11 mi por trimestre) e altíssima conversão de resultado em caixa distribuível.
+- ROE acima de 72% nos últimos 12 meses, impulsionado pela natureza capital-light do negócio.
+- Gestão disciplinada de custos: despesas gerais e administrativas são residuais frente ao porte do grupo.
+- A Selic elevada funciona como amplificador do resultado financeiro das investidas (especialmente Brasilprev e Brasilcap), beneficiando a holding em ciclos de juros altos.
+
+### Perspectivas futuras
+
+- **Oportunidade estrutural:** penetração de seguros no Brasil ainda é baixa em relação ao PIB, com espaço relevante de crescimento secular.
+- **Risco de curto prazo:** queda da Selic reduz o resultado financeiro das investidas; aumento da sinistralidade rural e prestamista pressiona margens operacionais.
+- **Vetor de crescimento:** expansão para pessoas jurídicas, novos produtos e digitalização do canal de distribuição.
+- **Risco do IOF:** mudança tarifária do IOF já impactou demanda por VGBL e PGBL (Brasilprev), com efeito esperado nos próximos trimestres.
+- **La Niña e safra:** variações climáticas podem ampliar ou reduzir a sinistralidade do seguro rural — variável de monitoramento contínuo.
+- **Cancelamento de ações:** a recompra e cancelamento de ações em tesouraria melhora o DPA futuro, beneficiando o investidor de longo prazo.
+- **2026 como ano de transição:** guidance da companhia aponta queda de 3% a 7% no resultado operacional ex-juros; resultado financeiro deve compensar parcialmente via Selic ainda elevada.
+
+---
+
+## 4. Análise Setorial
+
+### Classificação setorial
+
+- A BB Seguridade pertence ao setor de **Seguros**, que integra o grupo **BESST** (Bancos, Energia Elétrica, Saneamento, Seguros e Telecomunicações) — conjunto de setores considerados perenes e prioritários na metodologia Barsi/AGF.
+- Adicionalmente, dado que a empresa é classificada como previdenciária nos dados da plataforma, ela reúne as características de ambas as classificações: setor BESST (Seguros) e empresa com forte braço previdenciário (Brasilprev).
+
+### Modelo de negócio e dinâmica do setor
+
+- O setor segurador brasileiro é regulado pela Susep e caracterizado por demanda inelástica e crescente, especialmente em vida, rural e previdência complementar.
+- A BB Seguridade não opera diretamente como seguradora — atua como holding e distribuidora, capturando margem sem assumir risco atuarial direto, o que reduz a volatilidade de resultados.
+- O resultado do grupo é composto por: resultado das participações nas controladas + resultado financeiro da holding e investidas + receitas de distribuição (BB Corretora).
+- A taxa Selic é uma variável crítica: juros altos ampliam o resultado financeiro das reservas técnicas (Brasilprev, Brasilcap) e reduzem a demanda por crédito (seguro prestamista).
+- O seguro rural é um vetor de volatilidade: dependente de safra, clima e política agrícola do Banco do Brasil.
+- O setor de capitalização (Brasilcap) está positivamente correlacionado com juros altos e cultura de poupança, apresentando forte crescimento no 3T25 (+31% vs. 3T24).
+- Previdência aberta (Brasilprev) é o maior driver de longo prazo: envelhecimento da população, reforma previdenciária e baixa cobertura previdenciária privada no Brasil sustentam crescimento secular.
+- O segmento odontológico (Brasildental) é marginal nos resultados do grupo — menor porte e retorno.
+
+---
+
+## 5. Notícias e Percepção Recente
+
+### Notícias recentes (últimos 3 meses)
+
+O trimestre foi marcado por uma combinação de resultados operacionais resilientes e perspectivas desafiadoras para 2026. A BB Seguridade reportou lucro líquido gerencial de R$ 2,219 bilhões no 1T26, alta de 11,2% em relação ao 1T25, impulsionado pelo resultado financeiro combinado das investidas (+58,5% na base anual, atingindo R$ 507,1 milhões líquidos), com destaque para a Brasilprev (+51%), beneficiada pela alta da Selic e deflação do IGP-M defasado. A Brasilseg cresceu apenas 0,6% no lucro recorrente, enquanto a Brasilcap avançou 93,7% e a Brasildental recuou 31,6%. No lado operacional, os prêmios emitidos seguiram em trajetória negativa: -5,4% em janeiro e -0,5% em fevereiro de 2026, com pressão especialmente no seguro prestamista (-17% em janeiro) e nos seguros de vida, enquanto o mercado total crescia 5% no mesmo período. O cancelamento de 58,6 milhões de ações em tesouraria (2,93% do total), aprovado em março, foi bem recebido por aumentar o DPA futuro. Em contrapartida, o Itaú BBA rebaixou a recomendação da ação para equivalente a venda, com preço-alvo reduzido para R$ 32, citando intensificação dos desafios operacionais, queda esperada de ~29% nos seguros agrícolas no 2S26 e estimativa de queda de 6% no lucro de 2026. O CEO Delano Valentim reconheceu o ambiente desafiador, mas manteve o guidance original de queda entre 3% e 7% no resultado operacional ex-juros para 2026, sinalizando que novas linhas para pessoa jurídica e melhorias de eficiência devem contribuir para sustentar o desempenho. A companhia também distribuiu R$ 4,95 bilhões em dividendos referentes ao 2S25, equivalentes a R$ 2,61 por ação corrigidos pela Selic, pagos em março de 2026.
+
+### Percepção do analista AGF
+
+Pedro Galdi (CNPI 5975), em análise de novembro de 2025 e atualizada com comentários sobre os resultados de 2026, mantém visão construtiva para a BB Seguridade, reconhecendo os ventos contrários sem adotar postura pessimista. Na avaliação do analista, a empresa demonstrou capacidade de compensar a estagnação nos seguros rurais e prestamistas com crescimento em outros segmentos — padrão que deve continuar sendo testado em 2026. Galdi destaca que a Selic elevada segue sendo um fator estruturalmente positivo para o resultado financeiro das investidas, especialmente Brasilprev e Brasilcap, e que o guidance conservador da companhia para 2026 pode refletir mais cautela gerencial do que deterioração real dos fundamentos. O analista alerta para a necessidade de acompanhar IPCA e IGP-M como indexadores de prêmios e sinistros, e aponta que a empresa precisará adotar postura comercialmente agressiva na venda de produtos para compensar a menor contribuição do resultado financeiro num eventual ciclo de queda de juros. A ação é mantida como recomendação de compra na carteira AGF com peso de 15%, refletindo a convicção na tese de dividendos de longo prazo, mesmo diante de um ano operacionalmente mais desafiador.

@@ -1,8 +1,23 @@
+import io
+import warnings
+
+import pdfplumber
 import pymysql
 import pandas as pd
 import numpy as np
-import warnings
+import requests
+
 warnings.filterwarnings("ignore", message="pandas only supports SQLAlchemy")
+
+
+def _extrair_texto_pdf(url: str) -> str:
+    """Baixa o PDF da URL e retorna seu conteúdo como texto."""
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    with pdfplumber.open(io.BytesIO(response.content)) as pdf:
+        paginas = [pagina.extract_text() or "" for pagina in pdf.pages]
+    return "\n\n".join(paginas)
+
 
 def extrair_dados_acao(conn, sigla: str) -> dict:
     sigla = sigla.lower()
@@ -22,12 +37,44 @@ def extrair_dados_acao(conn, sigla: str) -> dict:
         raise ValueError(f"Nenhuma empresa encontrada para a sigla '{sigla}'")
     empresa_id = int(df_empresa["empresa_id"].iloc[0])
 
+    # Recalcula margem_seguranca com cotacao_fechamento para não variar intraday
+    if {"cotacao_fechamento", "preco_teto"}.issubset(df_empresa.columns):
+        cf = df_empresa["cotacao_fechamento"]
+        pt = df_empresa["preco_teto"]
+        df_empresa["margem_seguranca"] = ((pt - cf) / cf * 100).round(4)
+    df_empresa = df_empresa.drop(
+        columns=["cotacao", "cotacao_variation", "cotacao_variation_percent"],
+        errors="ignore",
+    )
+
     queries = {
         "historico_resultado": "SELECT * FROM historico_resultado_empresa WHERE empresa_id = %(eid)s",
         "stock_guide_hist":    "SELECT * FROM stock_guide_historico      WHERE empresa_id = %(eid)s",
         "estimativa_tri":      "SELECT * FROM estimativa_tri             WHERE empresa_id = %(eid)s",
         "estimativa_hist":     "SELECT * FROM estimativa_historica       WHERE empresa_id = %(eid)s",
-        #"latest_analysis":     "SELECT * FROM latest_analysis            WHERE ticker     = %(sigla_up)s",
+        "latest_analysis": """
+            SELECT *
+            FROM latest_analysis
+            WHERE ticker = %(sigla_up)s
+            ORDER BY date_analise DESC
+            LIMIT 1
+        """,
+        "noticias": """
+            SELECT n.data, n.titulo, n.conteudo
+            FROM noticias n
+            JOIN noticias_empresa ne ON ne.noticia_id = n.id
+            WHERE ne.empresa_id = %(eid)s
+              AND n.data >= DATE_SUB(NOW(), INTERVAL 3 MONTH)
+            ORDER BY n.data DESC
+            LIMIT 20
+        """,
+        "recomendacao": """
+            SELECT ticker, percent, comment, operation_type, updated_at
+            FROM recomendacao
+            WHERE ticker = %(sigla_up)s
+            ORDER BY updated_at DESC
+            LIMIT 1
+        """,
     }
 
     params = {"eid": empresa_id, "sigla_up": sigla_up}
@@ -35,15 +82,28 @@ def extrair_dados_acao(conn, sigla: str) -> dict:
     for nome, sql in queries.items():
         dados[nome] = pd.read_sql(sql, conn, params=params)
 
+    # Extrai o conteúdo do PDF referenciado na coluna attachment (JSON array)
+    df_analysis = dados["latest_analysis"]
+    if not df_analysis.empty:
+        attachment_raw = df_analysis["attachment"].iloc[0]
+        if pd.notna(attachment_raw):
+            import json
+            itens = json.loads(attachment_raw) if isinstance(attachment_raw, str) else attachment_raw
+            if itens and isinstance(itens, list):
+                pdf_url = itens[0].get("url", "")
+                if pdf_url:
+                    texto_pdf = _extrair_texto_pdf(pdf_url)
+                    dados["latest_analysis"] = df_analysis.assign(conteudo_pdf=[texto_pdf])
+
     return dados
 
-# conn = pymysql.connect(
-#     host="prd.db.agfmais.com.br", 
-#     port=3306,
-#     user="api-wealth-prd",
-#     password="207u{M5Ym)38;Kt",
-#     db="agfmais",
-#     connect_timeout=10)
+conn = pymysql.connect(
+    host="prd.db.agfmais.com.br", 
+    port=3306,
+    user="api-wealth-prd",
+    password="207u{M5Ym)38;Kt",
+    db="agfmais",
+    connect_timeout=10)
 
 # df = extrair_dados_acao(conn, "TASA4")
                    
@@ -81,8 +141,17 @@ def extrair_dados_acao(conn, sigla: str) -> dict:
 # # noticias
 # sql = f"""
 # SELECT *
-# FROM noticias_empresa
+# FROM noticias
 # """
 # df = pd.read_sql(sql, conn)
 # df['conteudo']
 
+# with conn.cursor() as cursor:
+#     cursor.execute("SHOW TABLES;")
+#     print(cursor.fetchall())
+
+# sql = f"""
+# SELECT *
+# FROM recomendacao
+# """
+# df = pd.read_sql(sql, conn)

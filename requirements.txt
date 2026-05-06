@@ -2,3 +2,8 @@ pandas
 pymysql
 python-dotenv
 tabulate
+requests
+pdfplumber
+anthropic
+fastapi
+uvicorn[standard]
